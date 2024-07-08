@@ -1,0 +1,72 @@
+[
+  {
+    "id": "9a4653b9-2bc5-44b4-b54e-01c57198b084",
+    "date": "2024-02-02T22:26:22.664Z",
+    "airline": "EVA Air",
+    "flightNumber": 1,
+    "seat": "31A"
+  },
+  {
+    "id": "0d7068e5-eb76-47a2-9b63-f5fc254f99f4",
+    "date": "2024-09-25T14:01:03.563Z",
+    "airline": "Linea Aerea Amaszonas",
+    "flightNumber": 68,
+    "seat": "12C"
+  },
+  {
+    "id": "bc5c781e-5a6b-4705-a1e4-7695277a3f12",
+    "date": "2024-06-05T13:03:07.491Z",
+    "airline": "Thai Airways",
+    "flightNumber": 157,
+    "seat": "21B"
+  },
+  {
+    "id": "bae52087-18c6-40cf-9b84-46f16ce754a6",
+    "date": "2024-09-23T04:50:27.437Z",
+    "airline": "Singapore Airlines",
+    "flightNumber": 768,
+    "seat": "4D"
+  },
+  {
+    "id": "de25dc84-6702-4b43-8784-b5f5177b3b4a",
+    "date": "2024-03-09T07:52:32.632Z",
+    "airline": "Air Transat",
+    "flightNumber": 4,
+    "seat": "31F"
+  },
+  {
+    "id": "7f140a6a-d511-4487-bab9-3716c559a1b1",
+    "date": "2024-05-03T05:37:49.834Z",
+    "airline": "Singapore Airlines",
+    "flightNumber": 7,
+    "seat": "12B"
+  },
+  {
+    "id": "b9495612-8a89-4962-bc4c-351ff8db2b9e",
+    "date": "2024-03-09T12:15:50.937Z",
+    "airline": "TUI Airways",
+    "flightNumber": 677,
+    "seat": "29B"
+  },
+  {
+    "id": "afa0b934-438c-4fda-b2a3-c70004bc863e",
+    "date": "2024-11-25T07:24:41.091Z",
+    "airline": "Star Peru",
+    "flightNumber": 98,
+    "seat": "1E"
+  },
+  {
+    "id": "5029c759-2284-407d-8f8a-e77bcf96262c",
+    "date": "2024-05-29T10:24:56.046Z",
+    "airline": "Ukraine International",
+    "flightNumber": 55,
+    "seat": "3A"
+  },
+  {
+    "id": "386f55a7-e840-469e-89c9-561b1380efcb",
+    "date": "2024-06-03T07:12:25.481Z",
+    "airline": "Turkish Airlines",
+    "flightNumber": 12,
+    "seat": "29D"
+  }
+]
