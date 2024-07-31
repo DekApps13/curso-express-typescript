@@ -14,12 +14,29 @@ router.get('/:id', (req, res) => {
 
   //return diary
   return (diary !== null)
-  ? res.send(diary)
-  : res.sendStatus(404)
+    ? res.send(diary)
+    : res.sendStatus(404)
 })
 
-router.post('/', (_req, res) => {
-  res.send('Saving a diary!');
+router.get('/nside/:id', (req, res) => {
+  const diary = diaryServices.findByIdNside(req.params.id);
+
+  return (diary !== null)
+    ? res.send(diary)
+    : res.sendStatus(404)
+})
+
+router.post('/', (req, res) => {
+  const { date, airline, flightNumber, seat } = req.body;
+
+  const newDiaryEntry = diaryServices.addEntry(
+    date,
+    airline,
+    flightNumber,
+    seat
+  );
+
+  res.json(newDiaryEntry);
 })
 
 export default router;

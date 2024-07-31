@@ -2,7 +2,7 @@ export type AirlineName = "EVA Air" | "Linea Aerea Amaszonas" | "Thai Airways"
   | "Singapore Airlines" | "Air Transat" | "TUI Airways" | "Star Peru"
   | "Ukraine International" |"Turkish Airlines"
 
-export interface DiaryEntry {
+export type DiaryEntry = {
   "id": string,
   "date": string,
   "airline": AirlineName,
