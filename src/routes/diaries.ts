@@ -8,18 +8,21 @@ router.get('/', (_req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  const diary = diaryServices.findById(req.params.id);
+  let idNumber: number = Number.parseInt(req.params.id);
+  const diary = diaryServices.findById(idNumber);
 
   //res.send(diary);
 
-  //return diary
+  //return diary;
+
   return (diary !== null)
     ? res.send(diary)
     : res.sendStatus(404)
 })
 
 router.get('/nside/:id', (req, res) => {
-  const diary = diaryServices.findByIdNside(req.params.id);
+  let idNumber: number = Number.parseInt(req.params.id);
+  const diary = diaryServices.findByIdNside(idNumber);
 
   return (diary !== null)
     ? res.send(diary)

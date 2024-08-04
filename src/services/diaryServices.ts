@@ -17,11 +17,11 @@ export const getEntriesWithoutSensitiveInfo = (): NonSensitiveInfoDiaryEntry[] =
   });
 };
 
-export const findById = (id: string): DiaryEntry | undefined => {
+export const findById = (id: number): DiaryEntry | undefined => {
   return diaries.find((d) => d.id === id);
 }
 
-export const findByIdNside = (id: string): NonSensitiveInfoDiaryEntry | undefined => {
+export const findByIdNside = (id: number): NonSensitiveInfoDiaryEntry | undefined => {
   const entry = diaries.find((d) => d.id === id);
   if (entry) {
     const { flightNumber, seat, ...restOfDiary } = entry;
@@ -38,6 +38,14 @@ export const addEntry = (
   seat: string
 ): DiaryEntry => {
   const newDiaryEntry = {
-    id: Math.max(...diaries.map((d) => d.id as unknown as number)) + 1, // diaries.length + 1
+    id: Math.max(...diaries.map(d => d.id)) + 1,
+    date,
+    airline,
+    flightNumber,
+    seat
   }
+
+  diaries.push(newDiaryEntry);
+
+  return newDiaryEntry;
 };

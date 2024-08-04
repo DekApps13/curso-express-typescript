@@ -8,7 +8,9 @@ const PORT = 3000;
 
 app.get('/', (_req, res) => {
   console.log('Home page');
-  res.status(200).json({ message: 'Hola Derek' });
+  res.status(200).json({
+    message: 'Hola Derek, Bienvenido al Landing Page'
+  });
 })
 
 app.get('/ping', (_req, res) => {
