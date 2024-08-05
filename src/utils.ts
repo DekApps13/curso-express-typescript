@@ -56,7 +56,6 @@ const toNewDiaryEntry = (object: any): NewDiaryEntry => {
     flightNumber: parseFlightNumber(object.flightNumber),
     seat: parseSeat(object.seat)
   }
-  // ...Work
 
   return newEntry;
 }
