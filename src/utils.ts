@@ -1,4 +1,5 @@
-import { NewDiaryEntry, AirlineName } from "./types";
+import { NewDiaryEntry } from "./types";
+import { AirlineName } from "./enums";
 
 const parseSeat = (seatFromRequest: any): string => {
   if (!isString(seatFromRequest)) {
