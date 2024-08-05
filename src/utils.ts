@@ -24,12 +24,12 @@ const parseAirlineName = (airlineFromRequest: any): AirlineName => {
   return airlineFromRequest;
 }
 
-const parseFlightNumber = (flightNumber: any): number => {
-  if (!isNumber(flightNumber)) {
+const parseFlightNumber = (flightNumberFromRequest: any): number => {
+  if (!isNumber(flightNumberFromRequest)) {
     throw new Error("Incorrect or missing flight number");
   }
 
-  return flightNumber;
+  return flightNumberFromRequest;
 }
 
 const isString = (string: any): boolean => {
