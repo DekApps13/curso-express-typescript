@@ -32,11 +32,13 @@ router.get('/nside/:id', (req, res) => {
 router.post('/', (req, res) => {
   const { date, airline, flightNumber, seat } = req.body;
 
-  const newDiaryEntry = diaryServices.addEntry(
-    date,
-    airline,
-    flightNumber,
-    seat
+  const newDiaryEntry = diaryServices.addDiary(
+    {
+      date,
+      airline,
+      flightNumber,
+      seat
+    }
   );
 
   res.json(newDiaryEntry);

@@ -1,4 +1,4 @@
-import { AirlineName, DiaryEntry, NonSensitiveInfoDiaryEntry } from '../types';
+import { DiaryEntry, NewDiaryEntry, NonSensitiveInfoDiaryEntry } from '../types';
 import diariesData from './diaries.json';
 
 // Array forma Array<T>
@@ -31,21 +31,13 @@ export const findByIdNside = (id: number): NonSensitiveInfoDiaryEntry | undefine
   return undefined;
 }
 
-export const addEntry = (
-  date: string,
-  airline: AirlineName,
-  flightNumber: number,
-  seat: string
-): DiaryEntry => {
-  const newDiaryEntry = {
+export const addDiary = (newDiaryEntry: NewDiaryEntry): DiaryEntry => {
+  const newDiary = {
     id: Math.max(...diaries.map(d => d.id)) + 1,
-    date,
-    airline,
-    flightNumber,
-    seat
+    ...newDiaryEntry
   }
 
-  diaries.push(newDiaryEntry);
+  diaries.push(newDiary);
 
-  return newDiaryEntry;
+  return newDiary;
 };
