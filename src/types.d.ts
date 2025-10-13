@@ -22,9 +22,9 @@ export type SpecialDiaryEntry2 = DiaryEntry & {
 
 // Tipo de Utilidad
 // Pick<>
-// export type NonSensitiveInfoDiaryEntry = Pick<DiaryEntry, "id" | "airline" | "date">
+export type NonSensitiveInfoDiaryEntry = Pick<DiaryEntry, "id" | "airline" | "date">
 
 // Omit<>
-export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry, "flightNumber" | "seat">
+export type NonSensitiveInfoDiaryEntry2 = Omit<DiaryEntry, "flightNumber" | "seat">
 
 export type NewDiaryEntry = Omit<DiaryEntry, "id">
